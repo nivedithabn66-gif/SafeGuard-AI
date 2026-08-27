@@ -1,0 +1,98 @@
+[
+  {
+    "id": "scenario_a",
+    "title": "Scenario A — Normal Peer Chat",
+    "description": "Safe, casual conversation between classmates discussing gaming and schoolwork. Risk remains low.",
+    "expected_level": "LOW",
+    "messages": [
+      {
+        "sender": "other",
+        "text": "Hey! Did you get a chance to finish the science project assignment?"
+      },
+      {
+        "sender": "user",
+        "text": "Yeah! I finished the presentation slides yesterday."
+      },
+      {
+        "sender": "other",
+        "text": "Awesome! Do you want to play some Minecraft later this evening?"
+      },
+      {
+        "sender": "user",
+        "text": "Sure, I'll jump on after dinner around 7 PM!"
+      }
+    ]
+  },
+  {
+    "id": "scenario_b",
+    "title": "Scenario B — Sensitive Information Request",
+    "description": "Participant starts normally then probes for sensitive PII (school name and home location).",
+    "expected_level": "MEDIUM",
+    "messages": [
+      {
+        "sender": "other",
+        "text": "Hey! You're really good at this game!"
+      },
+      {
+        "sender": "user",
+        "text": "Thanks! I've been practicing."
+      },
+      {
+        "sender": "other",
+        "text": "By the way, what school do you go to? Are you in the local district?"
+      },
+      {
+        "sender": "other",
+        "text": "What's your phone number so we can text about teaming up tomorrow?"
+      }
+    ]
+  },
+  {
+    "id": "scenario_c",
+    "title": "Scenario C — Repeated Secrecy & Isolation",
+    "description": "Participant repeatedly urges child to hide interaction from parents and move off-platform.",
+    "expected_level": "HIGH",
+    "messages": [
+      {
+        "sender": "other",
+        "text": "I have a special secret trick to unlock free in-game items!"
+      },
+      {
+        "sender": "user",
+        "text": "Really? How do I get them?"
+      },
+      {
+        "sender": "other",
+        "text": "Promise not to tell your mom or dad about this. Keep it our secret."
+      },
+      {
+        "sender": "other",
+        "text": "Your parents don't understand games anyway. Move to Discord right now and clear this chat history."
+      }
+    ]
+  },
+  {
+    "id": "scenario_d",
+    "title": "Scenario D — Escalating Coercion & Threat",
+    "description": "High-risk sequence combining secrecy demands, PII solicitation, and coercive pressure tactics.",
+    "expected_level": "CRITICAL",
+    "messages": [
+      {
+        "sender": "other",
+        "text": "Hey, don't tell your parents we are talking. Keep this between us."
+      },
+      {
+        "sender": "other",
+        "text": "What's your full name and home address right now?"
+      },
+      {
+        "sender": "other",
+        "text": "If you don't send your home address right now, you'll be sorry!"
+      },
+      {
+        "sender": "other",
+        "text": "Do it now or else I'll tell everyone at school and ruin everything!"
+      }
+    ]
+  }
+]
